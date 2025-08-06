@@ -1,3 +1,20 @@
+/*
+==============================================================
+Stored Procedure: Load Silver layer
+==============================================================
+Purpose:  
+  This script creates a a stored procedure called load_silver.
+  It performs the following actions:
+    - Truncates the silver tables before loading the data
+    - Insert cleaned / transformed data from the bronze to the silver tables
+
+Parameters:
+  None
+
+Usage example:
+  EXECUTE silver.load_silver;
+*/
+
 Create or alter procedure silver.load_silver as
 
 BEGIN
