@@ -1,3 +1,17 @@
+/*
+==============================================================
+DDL Script : Create Silver Tables
+==============================================================
+Purpose:  
+  This script creates the tables of the silver Schema.
+  If a table already exists, it is dropped and recreated.
+
+WARNING:
+  Running this script will drop the existing CRM and ERP tables.
+  All data will be permanently deleted. Proceed with caution and ensure you have the
+  proper backups if needed.
+*/
+
 IF OBJECT_ID('silver.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE silver.crm_cust_info;
 
